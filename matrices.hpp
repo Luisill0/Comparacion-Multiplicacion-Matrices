@@ -42,8 +42,8 @@ int** subtract(int** M1, int** M2, int n){
     return temp;
 }
 
-void fillRandom(int** matrix, int n){
-    srand(2005);
+void fillRandom(int** matrix, int n, double SEED){
+    srand(SEED);
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
             matrix[i][j] = rand() % 8 + 1;
@@ -54,7 +54,7 @@ void fillRandom(int** matrix, int n){
 void printMatrix(int** matrix, int n){
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
-            printf("[%d]",matrix[i][j]);
+            printf("[%3d]",matrix[i][j]);
         }
         putchar('\n');
     }

@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "matrices.hpp"
 
 int** strassenMultiply(int** A,int** B, int n){
     if(n == 1){
