@@ -25,11 +25,11 @@ int main(){
 	
     cout << "\nUsando el tradicional:\n";
 	C = traditionalMultiply(A,B,n);
-	printMatrix(C,n);
+	putchar('\n');
 	
 	cout << "\nUsando strassen:\n";
 	C = strassenMultiply(A,B,n);
-	printMatrix(C,n);
+	putchar('\n');
 	
     return 0;
 }
