@@ -3,12 +3,9 @@
 #include <time.h>
 
 int** initializeMatrix(int size){
-    int **C;
-    C = (int**) malloc(sizeof(int*) * size);
-    if(C){
-        for(int i = 0; i < size; i++){
-            *(C+i) = (int*) malloc(sizeof(int) * size);
-        }
+    int **C = new int*[size];
+    for(int i = 0; i < size; i++){
+        C[i] = new int[size];
     }
     
     return C;
