@@ -11,6 +11,14 @@ int** initializeMatrix(int size){
     return C;
 }
 
+void setMatrixTo(int **M,int size,int value){
+	for(int i = 0; i < size; i++){
+		for(int j = 0; j < size; j++){
+			M[i][j] = value;
+		}
+	}
+}
+
 void freeMatrix(int ***M, int size){
     for(int i = 0; i < size; i++){
         free(*(M+i));
